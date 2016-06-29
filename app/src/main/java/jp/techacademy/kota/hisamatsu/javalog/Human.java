@@ -2,18 +2,19 @@ package jp.techacademy.kota.hisamatsu.javalog;
 
 import android.util.Log;
 
-class Human extends Animal implements Thinkable{
+public class Human extends Animal implements Thinkable{
 
-    String name;
-    int age;
-    String hobby;
+    private String name;
+    private int age;
+    private String hobby;
 
-    public Human(String name, int age, String hobby) {
+    public Human(final String name, final int age, final String hobby) {
         this.name = name;
         this.age = age;
         this.hobby = hobby;
     }
 
+    @Override
     public void say() {
         Log.d("javatest", "私の名前は " + name + " です。年は " + age + " 歳です。");
     }

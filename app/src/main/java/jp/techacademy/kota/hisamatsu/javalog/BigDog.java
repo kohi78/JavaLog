@@ -2,9 +2,9 @@ package jp.techacademy.kota.hisamatsu.javalog;
 
 import android.util.Log;
 
-class BigDog extends Dog {
+public class BigDog extends Dog {
 
-    static String to_jp = "大型犬";
+    private static String TO_JP = "大型犬";
 
     public BigDog(String name, int age) {
         super(name, age);

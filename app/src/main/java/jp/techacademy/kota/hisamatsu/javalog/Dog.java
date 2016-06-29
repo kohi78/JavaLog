@@ -2,14 +2,14 @@ package jp.techacademy.kota.hisamatsu.javalog;
 
 import android.util.Log;
 
-class Dog extends Animal implements Movable {
+public class Dog extends Animal implements Movable {
 
     // class var
-    static String to_jp = "犬";
+    private static String TO_JP = "犬";
 
     // member var
-    String name;
-    int age;
+    private String name;
+    private int age;
 
     // constructor
     public Dog(String name, int age) {
@@ -23,6 +23,7 @@ class Dog extends Animal implements Movable {
     }
 
     // member method
+    @Override
     public void say(){
         Log.d("javatest", this.name + "(" + this.age + "歳)" + "「ワンワン」");
     }
